@@ -1,11 +1,17 @@
-num = int(input("Enter  any number:"))
+nterms = int(input("Enter the number of terms : "))
 n1 , n2 = 0 , 1
-sum = 0
-if num <= 0:
-    print("Please enter number greater than 0")
+count = 0
+
+if nterms <= 0:
+    print("Please enter a positive integer")
+elif nterms == 1:
+    print("Fibonacci series upto " ,nterms,":")
+    print(n1)
 else:
-    for i in range(0, num):
-        print(sum , end = "")
+    print("Fibonacci series upto:")
+    while count < nterms:
+        print(n1)
+        nth = n1 + n2
         n1 = n2
-        n2 = sum
-        sum = n1 + n2
+        n2 = nth
+        count += 1
