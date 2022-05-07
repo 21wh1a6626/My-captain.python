@@ -9,7 +9,7 @@ print("Area of the circle is : {0}".format(area))
 
 
 
-#tas2
+#task2
 fn= input("Enter Filename: ")
 
 f = fn.split(".")
