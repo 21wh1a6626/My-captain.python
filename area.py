@@ -10,10 +10,8 @@ print("Area of the circle is : {0}".format(area))
 
 
 #tas2
-filename = input("Write the filename")
+fn= input("Enter Filename: ")
 
-file_extns = filename.split(".")
+f = fn.split(".")
 
-print("The extension is " +repr(file_extns[-1]))
-          
-
+print ("Extension of the file is : " + f[-1])
